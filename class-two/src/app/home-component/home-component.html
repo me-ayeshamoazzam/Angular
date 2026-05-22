@@ -1,0 +1,14 @@
+
+<h1> Home</h1>
+<h3>Interpolation:</h3>
+<p> {{message}}</p>
+
+<h3>Property binding:</h3>
+<input type="text" [value]="message">
+
+<h3>Event binding:</h3>
+<input type="text" #txtData (keyup)="onchange(txtData.value)">
+<button type="button" (click)="updateMessage()"> Update</button>
+
+<br>
+<input type="text" [(ngModel)] = "message">
